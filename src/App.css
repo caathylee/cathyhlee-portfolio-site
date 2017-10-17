@@ -1,6 +1,16 @@
-body {
-  background-color: yellow; }
+img {
+  width: 100px; }
 
-p {
-  color: purple; 
-}
+.slider {
+  background: #8e8fbb; }
+  .slider h1, .slider .tagline {
+    text-align: center;
+    color: #fff; }
+
+header .nav {
+  text-align: center; }
+  header .nav li {
+    display: inline-block; }
+
+footer {
+  text-align: center; }
