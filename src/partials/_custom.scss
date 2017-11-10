@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "andaleMono";
+	src: url("/fonts/AndaleMono.ttf");
+}
+
+h1, h2, p, li, a {
+	font-family: "andaleMono";
+}
+
+h1, h2 {
+	color: $maroon;
+}
+
+.btn {
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	&:hover {
+		background-color: #000;
+		color: #fff;
+	}
+}

@@ -1,11 +1,100 @@
+.note-box {
+	background: #DDD;
+	float: left;
+	display: block;
+	height: 400px;
+	@for $i from 1 through 12 {
+		&.s3-#{$i} {
+			background: url('images/s3-clients/s3-#{$i}.jpg') no-repeat center center;
+		}
+	}
+
+	@media(min-width:1025px) {
+		width: 33%;
+		margin-bottom: .5%;
+		margin-right: .5%;
+		&:nth-of-type(3n) {
+			margin-right: 0;
+		}
+	}
+	@media(max-width:1024px) {
+		width: 49%;
+		margin-right: 2%;
+		margin-bottom: 2%;
+		&:nth-of-type(2n) {
+			margin-right: 0;
+		}
+	}
+	@media(max-width:768px) {
+		width: 100%;
+	}
+	position: relative;
+	h3 {
+		position: absolute;
+		text-align: center;
+		color: #fff;
+		margin-top: 0;
+		margin-bottom: 0;
+		top: 50%;
+		left: 50%;
+	    -webkit-transform: translateX(-50%) translateY(-50%);
+	    -moz-transform: translateX(-50%) translateY(-50%);
+   	 	-ms-transform: translateX(-50%) translateY(-50%);
+    	-o-transform: translateX(-50%) translateY(-50%);
+    	transform: translateX(-50%) translateY(-50%);
+	}
+}
+
 img {
 	width: 100px;
 }
-
 .slider {
-	background: #8e8fbb;
+	background: #000 url('images/workspace.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
 	h1, .tagline {
 		text-align: center;
 		color: #fff;
+	}
+	.row {
+		padding-top: 100px;
+		padding-bottom: 200px;
+	}
+}
+
+h2 {
+	text-align: center;
+	+ p {
+		text-align: center;
+		max-width: 650px;
+		width: 100%;
+		margin: auto;
+	}
+}
+
+.works {
+	h2 {
+		margin-top: 100px;
+	}
+	p {
+		margin-bottom: 60px;
+	}
+}
+
+.projects {
+	background-color: $gray;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+
+.contact {
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	p {
+		margin-bottom: 30px;
 	}
 }
