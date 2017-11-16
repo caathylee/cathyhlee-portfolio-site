@@ -1,30 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-function Header(props) {
-  return (
-    <header className="App-header container">
-      <div className="row">
-        <ul className="nav">
-          <li><a>Home</a></li>
-          <li><a>Works</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Resume</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-      </div>
-    </header>
-  );
-}
-
-function Footer(props) {
-  return (
-    <footer>
-      <p>&copy; 2017 Designed & Developed by Cathy Lee. All Rights Reserved.</p>
-    </footer>
-  );
-}
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ThreeColoredLine from './components/ThreeColoredLine';
 
 class App extends Component {
   render() {
@@ -33,62 +11,100 @@ class App extends Component {
         <Header />
         <div className="container-fluid slider">
           <div className="row">
-            <h1 className="App-title">Cathy Lee</h1>
-            <p className="tagline">Design-saavy Front-end Developer</p>
+            <div className="text">
+              <h1>Cathy Lee</h1>
+              <p className="tagline">Design-saavy Front-end Developer</p>
+            </div>
           </div>
         </div>
-        <div className="container about">
-          <h2>Welcome</h2>
-          <p>My name is Cathy Lee and I am a front-end developer based in Los Angeles county with an eye for design, appreciation for clean code and seamless UI/UX.</p>
-        </div>
-        <div className="container-fluid works">
+        <ThreeColoredLine />
+        <div className="container-fluid works" id="works">
           <h2>Works</h2>
           <p>Here are some of the websites I developed using Foundation framework, PHP, and SASS.</p>
           <a className="note-box s3-1" href="https://www.dinomd.com" target="_blank">
-              <img src="image/s3-clients/dino-md.jpg" />
-              <h3>Dino MD</h3>
+              <div>
+                <img className="logo" src={require('./images/s3-clients/logos/logo-dino.png')} alt="Dino MD" />
+              </div>
           </a>
           <a className="note-box s3-2" href="https://www.newfaceny.com/" target="_blank">
-              <h3>New Face NY</h3>
+              <div>
+                <img className="logo" src={require('./images/s3-clients/logos/logo-newfaceny.png')} alt="New Face NY" />
+              </div>
           </a>
           <a className="note-box s3-3" href="http://theroseclinic.com/" target="_blank">
-              <h3>The Rose Clinic</h3>
+              <div>
+                <img className="logo" src={require('./images/s3-clients/logos/logo-theroseclinic.png')} alt="The Rose Clinic" />
+              </div>
           </a>
           <a className="note-box s3-4" href="https://www.drchristopherchang.com/" target="_blank">
-              <h3>Dr. Christopher Chang</h3>
+              <div>
+                <img className="logo" src={require('./images/s3-clients/logos/logo-christopherchang.png')} alt="Dr. Christopher Chang" />
+              </div>
           </a>
           <a className="note-box s3-5" href="https://www.deltaqualityelectric.com/#" target="_blank">
-              <h3>Delta Quality Electric</h3>
+              <div>
+                <img className="logo" src={require('./images/s3-clients/logos/logo-dino.png')} alt="Delta Quality Electric" />
+              </div>
           </a>
           <a className="note-box s3-6" href="https://www.benjamineye.com" target="_blank">
-              <h3>Benjamin Eye Institute</h3>
+              <div>
+                <img className="logo" src={require('./images/s3-clients/logos/logo-benjamineye.png')} alt="Benjamin Eye Institute" />
+              </div>
           </a>
           <a className="note-box s3-7" href="https://www.newjerseyspinesurgeon.com" target="_blank">
-              <h3>Progressive Spine & Orthopaedics</h3>
+              <div>
+                <img className="logo" src={require('./images/s3-clients/logos/logo-progressivespine.png')} alt="New Jersey Spine Surgeon" />
+              </div>
           </a>
           <a className="note-box s3-8" href="https://www.marcmalekmd.com" target="_blank">
-              <h3>Marc Malek MD</h3>
+              <div>
+                <img className="logo" src={require('./images/s3-clients/logos/logo-marcmalek.png')} alt="Marc Malek MD" />
+              </div>
           </a>
           <a className="note-box s3-9" href="https://www.lookrefreshed.com/" target="_blank">
-              <h3>Refreshed Aesthetic Surgery & Skincare</h3>
+              <div>
+                <img className="logo" src={require('./images/s3-clients/logos/logo-refreshed.png')} alt="Refreshed Aesthetic Surgery & Skincare" />
+              </div>
           </a>
           <a className="note-box s3-10" href="https://www.waringvision.com/" target="_blank">
-            <h3>Waring Vision</h3>
+            <div>
+              <img className="logo" src={require('./images/s3-clients/logos/logo-waring-vision.png')} alt="Waring Vision" />
+            </div>
           </a>
           <a className="note-box s3-11" href="http://www.hoefflinplasticsurgery.com/" target="_blank">
-            <h3>Hoefflin Plastic Surgery</h3>
+            <div>
+              <img className="logo" src={require('./images/s3-clients/logos/logo-hoefflin.png')} alt="Hoefflin Plastic Surgery" />
+            </div>
           </a>
           <a className="note-box s3-12" href="https://www.altairinstruments.com/" target="_blank">
-            <h3>Altair Instruments</h3>
+            <div>
+              <img className="logo" src={require('./images/s3-clients/logos/logo-altair.png')} alt="Altair Instruments" />
+            </div>
           </a>
         </div>
-        <div className="container-fluid projects">
+        <div className="container-fluid projects" id="projects">
           <h2>Projects</h2>
           <p>Coming soon.</p>
         </div>
-        <div className="container contact">
+        <div className="about" id="about">
+          <div className="container">
+            <div className="text">
+            <h2>About Cathy Lee</h2>
+            <p>Cathy Lee is a user-driven web developer that is passionate about creating seamless user interface and experience with a robust and modular application design. She can work autonomously, but thrives in team environments and believes version control as a necessity for efficiency. She currently resides in Los Angeles, California with her two pups. A few technologies she's proficient with include HTML, SASS, JavaScript, jQuery, React, Foundation, Node, Express, PHP, MongoDB, mySQL, and Git.</p>
+          </div>
+          </div>
+        </div>
+        <ThreeColoredLine />
+        <div className="container contact" id="contact">
           <h2>Contact</h2>
           <p>Want to work together? Let's get in touch!</p>
+          <ul className="socials">
+            <li><a href="https://bitbucket.org/caathylee/" target="_blank"><img className="icon" src={require('./images/icon-bitbucket.jpg')} /></a></li>
+            <li><a href="mailto:cathyhsianglee@gmail.com" target="_blank"><img className="icon" src={require('./images/icon-email.png')} /></a></li>
+            <li><a href="https://github.com/caathylee" target="_blank"><img className="icon" src={require('./images/icon-github.jpg')} /></a></li>
+            <li><a href="https://www.linkedin.com/in/cathyhsianglee" target="_blank"><img className="icon" src={require('./images/icon-linkedin.png')} /></a></li>
+          </ul>
+          <div className="clearfix"></div>
           <a href="mailto:cathyhsianglee@gmail.com" className="btn">Message</a>
         </div>
         <Footer />

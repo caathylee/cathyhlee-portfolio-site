@@ -1,3 +1,7 @@
 footer {
 	text-align: center;
+	border-top: 1px solid $lineGray;
+	p {
+		margin: 20px 0;
+	}
 }
