@@ -3,6 +3,11 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ThreeColoredLine from './components/ThreeColoredLine';
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
+global.jQuery = $;
+const bootstrap = require('bootstrap');
 
 class App extends Component {
   render() {
@@ -86,6 +91,7 @@ class App extends Component {
           <h2>Projects</h2>
           <p>Coming soon.</p>
         </div>
+        <ThreeColoredLine />
         <div className="about" id="about">
           <div className="container">
             <div className="text">
