@@ -322,24 +322,42 @@ h2 {
 
 .about {
   position: relative; }
-  .about:before {
-    content: "";
-    background: url("images/cathyleeoriginal.jpg") no-repeat center center;
-    background-size: cover;
-    width: 50%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .about .text {
-    width: 50%;
-    float: right;
-    padding-left: 30px;
-    padding-top: 60px;
-    padding-bottom: 100px; }
-    .about .text p, .about .text h2 {
-      text-align: left !important; }
+  @media (min-width: 992px) {
+    .about:before {
+      content: "";
+      background: url("images/cathyleeoriginal.jpg") no-repeat left center;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .about img {
+      display: none; }
+    .about .text {
+      width: 50%;
+      float: right;
+      padding-left: 30px;
+      padding-top: 60px;
+      padding-bottom: 100px; }
+      .about .text p, .about .text h2 {
+        text-align: left !important; } }
+  @media (max-width: 992px) {
+    .about {
+      padding-top: 60px;
+      padding-bottom: 60px; }
+      .about img {
+        width: 100%;
+        display: block;
+        margin: auto;
+        max-width: 300px;
+        padding-bottom: 10px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%; } }
 
 .contact {
   text-align: center;
