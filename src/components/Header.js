@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+function handleClick(e) {
+		e.preventDefault();
+		alert("This link was clicked.");
+	}
 class Header extends Component {
 	render() {
 		return (
@@ -16,10 +20,10 @@ class Header extends Component {
 				    </div>
 				    <div className="collapse navbar-collapse" id="myNavbar">
 				      <ul className="nav navbar-nav">
-				        <li><a href="#">Works</a></li>
-				        <li><a href="#">Projects</a></li>
-				        <li><a href="#">Resume</a></li>
-				        <li><a href="#">Contact</a></li>
+				        <li><a href="#" onClick={handleClick}>Works</a></li>
+				        <li><a href="#" onClick={handleClick}>Projects</a></li>
+				        <li><a href="#" onClick={handleClick}>Resume</a></li>
+				        <li><a href="#" onClick={handleClick}>Contact</a></li>
 				      </ul>
 				    </div>
 				  </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
+import Works from './components/Works';
 import Footer from './components/Footer';
 import ThreeColoredLine from './components/ThreeColoredLine';
 import $ from 'jquery';
@@ -19,74 +20,12 @@ class App extends Component {
             <div className="text">
               <h1>Cathy Lee</h1>
               <p className="tagline">Design-saavy Front-end Developer</p>
+              {/* <img src={require('./images/s3-clients/s3-1.jpg')} />  */}
             </div>
           </div>
         </div>
         <ThreeColoredLine />
-        <div className="container-fluid works" id="works">
-          <h2>Works</h2>
-          <p>Here are some of the websites I developed using Foundation framework, PHP, and SASS.</p>
-          <a className="note-box s3-1" href="https://www.dinomd.com" target="_blank">
-              <div>
-                <img className="logo" src={require('./images/s3-clients/logos/logo-dino.png')} alt="Dino MD" />
-              </div>
-          </a>
-          <a className="note-box s3-2" href="https://www.newfaceny.com/" target="_blank">
-              <div>
-                <img className="logo" src={require('./images/s3-clients/logos/logo-newfaceny.png')} alt="New Face NY" />
-              </div>
-          </a>
-          <a className="note-box s3-3" href="http://theroseclinic.com/" target="_blank">
-              <div>
-                <img className="logo" src={require('./images/s3-clients/logos/logo-theroseclinic.png')} alt="The Rose Clinic" />
-              </div>
-          </a>
-          <a className="note-box s3-4" href="https://www.drchristopherchang.com/" target="_blank">
-              <div>
-                <img className="logo" src={require('./images/s3-clients/logos/logo-christopherchang.png')} alt="Dr. Christopher Chang" />
-              </div>
-          </a>
-          <a className="note-box s3-5" href="https://www.deltaqualityelectric.com/#" target="_blank">
-              <div>
-                <img className="logo" src={require('./images/s3-clients/logos/logo-dino.png')} alt="Delta Quality Electric" />
-              </div>
-          </a>
-          <a className="note-box s3-6" href="https://www.benjamineye.com" target="_blank">
-              <div>
-                <img className="logo" src={require('./images/s3-clients/logos/logo-benjamineye.png')} alt="Benjamin Eye Institute" />
-              </div>
-          </a>
-          <a className="note-box s3-7" href="https://www.newjerseyspinesurgeon.com" target="_blank">
-              <div>
-                <img className="logo" src={require('./images/s3-clients/logos/logo-progressivespine.png')} alt="New Jersey Spine Surgeon" />
-              </div>
-          </a>
-          <a className="note-box s3-8" href="https://www.marcmalekmd.com" target="_blank">
-              <div>
-                <img className="logo" src={require('./images/s3-clients/logos/logo-marcmalek.png')} alt="Marc Malek MD" />
-              </div>
-          </a>
-          <a className="note-box s3-9" href="https://www.lookrefreshed.com/" target="_blank">
-              <div>
-                <img className="logo" src={require('./images/s3-clients/logos/logo-refreshed.png')} alt="Refreshed Aesthetic Surgery & Skincare" />
-              </div>
-          </a>
-          <a className="note-box s3-10" href="https://www.waringvision.com/" target="_blank">
-            <div>
-              <img className="logo" src={require('./images/s3-clients/logos/logo-waring-vision.png')} alt="Waring Vision" />
-            </div>
-          </a>
-          <a className="note-box s3-11" href="http://www.hoefflinplasticsurgery.com/" target="_blank">
-            <div>
-              <img className="logo" src={require('./images/s3-clients/logos/logo-hoefflin.png')} alt="Hoefflin Plastic Surgery" />
-            </div>
-          </a>
-          <a className="note-box s3-12" href="https://www.altairinstruments.com/" target="_blank">
-            <div>
-              <img className="logo" src={require('./images/s3-clients/logos/logo-altair.png')} alt="Altair Instruments" />
-            </div>
-          </a>
-        </div>
+        <Works />
         <ThreeColoredLine />
         <div className="container-fluid projects" id="projects">
           <h2>Projects</h2>
