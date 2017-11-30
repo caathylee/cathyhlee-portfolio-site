@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
+import About from './components/About';
 import Works from './components/Works';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 import ThreeColoredLine from './components/ThreeColoredLine';
 import $ from 'jquery';
@@ -9,6 +11,7 @@ window.jQuery = $;
 window.$ = $;
 global.jQuery = $;
 const bootstrap = require('bootstrap');
+
 
 class App extends Component {
   render() {
@@ -27,19 +30,8 @@ class App extends Component {
         <ThreeColoredLine />
         <Works />
         <ThreeColoredLine />
-        <div className="container-fluid projects" id="projects">
-          <h2>Projects</h2>
-          <p>Coming soon.</p>
-        </div>
-        <div className="about" id="about">
-          <div className="container">
-            <img src={require('./images/cathylee.jpg')} />
-            <div className="text">
-              <h2>About Cathy Lee</h2>
-              <p>Cathy Lee is a user-driven web developer that is passionate about creating seamless user interface and experience with a robust and modular application design. She can work autonomously, but thrives in team environments and believes version control as a necessity for efficiency. She currently resides in Los Angeles, California with her two pups. A few technologies she's proficient with include HTML, SASS, JavaScript, jQuery, React, Foundation, Node, Express, PHP, MongoDB, mySQL, and Git.</p>
-            </div>
-          </div>
-        </div>
+        <Projects />
+        <About />
         <ThreeColoredLine />
         <div className="container contact" id="contact">
           <h2>Contact</h2>

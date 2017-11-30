@@ -23,6 +23,9 @@ header .navbar-inverse {
     color: #fff; }
   header .navbar-inverse .navbar-collapse {
     border: none; }
+  @media (max-width: 768px) {
+    header .navbar-inverse {
+      background: #000; } }
 
 header .navbar-toggle {
   border: none; }
@@ -175,10 +178,27 @@ h2 {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 150px; }
+  .projects h2 + p {
+    margin-bottom: 80px; }
+  .projects .one-project {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px; }
+    .projects .one-project h3 {
+      text-align: left; }
+      .projects .one-project h3 + p {
+        color: #614c57;
+        font-size: 16px;
+        margin-bottom: 15px; }
+    .projects .one-project p {
+      text-align: left; }
+    .projects .one-project img {
+      margin-top: 30px; }
 
 .about {
   position: relative; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .about:before {
       content: "";
       background: url("images/cathyleeoriginal.jpg") no-repeat left center;

@@ -21,6 +21,9 @@ header {
 		.navbar-collapse {
 			border: none;
 		}
+		@media(max-width:$break-small) {
+			background: #000;
+		}
 	}
 	.navbar-toggle {
 		border: none;
@@ -33,7 +36,7 @@ header {
 			color: #fff !important;
 		}
 	}
-	@media (min-width: 768px) {
+	@media (min-width: $break-small) {
 	    .navbar .navbar-nav {
 	        display: inline-block;
 	        float: none;
