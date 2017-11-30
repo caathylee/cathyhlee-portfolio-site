@@ -18,7 +18,7 @@ function WorkSites(props) {
     </div>
   );
   return (
-    <div className="container-fluid works">
+    <div className="container-fluid" id="works">
 		<h2>Works</h2>
       	<p>The following are websites Cathy developed using Foundation framework, HTML, SASS, JavaScript, jQuery, WordPress, and PHP.</p>
       	{s3Sites}

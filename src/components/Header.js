@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 
-function handleClick(e) {
-		e.preventDefault();
-		alert("This link was clicked.");
-	}
-
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
     if (scroll >= 100) {
@@ -30,10 +25,10 @@ class Header extends Component {
 				    </div>
 				    <div className="collapse navbar-collapse" id="myNavbar">
 				      <ul className="nav navbar-nav">
-				        <li><a href="#" onClick={handleClick}>Works</a></li>
-				        <li><a href="#" onClick={handleClick}>Projects</a></li>
-				        <li><a href="#" onClick={handleClick}>Resume</a></li>
-				        <li><a href="#" onClick={handleClick}>Contact</a></li>
+				        <li><a href="#works">Works</a></li>
+				        <li><a href="#projects">Projects</a></li>
+				        <li><a href="#about">About</a></li>
+				        <li><a href="#contact">Contact</a></li>
 				      </ul>
 				    </div>
 				  </div>

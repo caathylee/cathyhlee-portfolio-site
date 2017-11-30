@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class About extends Component {
 	render() {
 		return (
-    	<div className="about" id="about">
+    	<div id="about">
           <div className="container">
             <img src={require('./../images/cathylee.jpg')} />
             <div className="text">
