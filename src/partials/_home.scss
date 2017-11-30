@@ -146,13 +146,22 @@ h2 {
 	}
 }
 
-.projects {
+#projects {
 	background-color: $lightGray;
 	text-align: center;
 	padding-top: 100px;
 	padding-bottom: 150px;
+	.personal-projects {
+		border-bottom: 1px solid $lineGray;
+	}
 	h2 + p {
-		margin-bottom: 80px;
+		margin-bottom: 100px;
+	}
+	.disclaimer {
+		padding-top: 60px;
+		margin-bottom: 50px;
+		font-size: 18px;
+		font-style: italic;
 	}
 	.one-project {
 		max-width: 800px;
@@ -164,7 +173,7 @@ h2 {
 		h3 {
 			text-align: left;
 			+ p {
-				color: $maroon;
+				color: $darkGray;
 				font-size: 16px;
 				margin-bottom: 15px;
 			}
@@ -174,6 +183,12 @@ h2 {
 		}
 		img {
 			margin-top: 30px;
+			max-width: 800px;
+			width: 100%;
+		}
+		.btn {
+			float: left;
+			margin-top: 10px;
 		}
 	}
 }
