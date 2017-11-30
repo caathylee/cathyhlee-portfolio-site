@@ -1,4 +1,4 @@
-.note-box {
+.one-site {
 	background: #DDD;
 	float: left;
 	display: block;
@@ -32,19 +32,18 @@
 	    	-o-transform: translateX(-50%) translateY(50%);
 	    	transform: translateX(-50%) translateY(50%);
 		}
-	}	
-	@for $i from 1 through 12 {
-		&.s3-#{$i} {
-			background: url('images/s3-clients/s3-#{$i}.jpg') no-repeat center center;
-				background-size: cover;
-			> div {
-				background: url('images/s3-clients/s3-#{$i}.jpg') no-repeat center center;
-				background-size: cover;
-			}
+		.bg-img {
+			@extend .transition;
+			transform: scale(1.4);
 		}
 	}
+	.bg-img {
+		@media (min-width: $break-small) {
+			margin-left: -25%;
+		}
+	}	
 
-	@media(min-width:1025px) {
+	@media(min-width:$break-medium) {
 		width: 33%;
 		margin-bottom: .5%;
 		margin-right: .5%;
@@ -52,7 +51,7 @@
 			margin-right: 0;
 		}
 	}
-	@media(max-width:1024px) {
+	@media(max-width:$break-medium) {
 		width: 49%;
 		margin-right: 2%;
 		margin-bottom: 2%;
@@ -60,8 +59,12 @@
 			margin-right: 0;
 		}
 	}
-	@media(max-width:768px) {
+	@media(max-width:$break-small) {
 		width: 100%;
+		height: auto;
+		img {
+			width: 100%;
+		}
 	}
 	.logo {
 		opacity: 0;
@@ -182,7 +185,7 @@ h2 {
 			}
 		}	
 	}
-	@media (max-width: $break-medium) {
+	@media (max-width: $break-small) {
 		padding-top: 60px;
 		padding-bottom: 60px;
 		img {

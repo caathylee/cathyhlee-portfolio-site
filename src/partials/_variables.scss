@@ -9,11 +9,11 @@ $potentialGray: #9d9d9d;
 
 /* Media Queries */
 
-/* Small devices (tablets) */
+/* Small devices (phones <768px, tablets >=768px) */
 $break-small: 768px; 
 
-/* Medium devices (desktops) */
+/* Medium devices (desktops >=992px) */
 $break-medium: 992px;
 
-/* Large devices (large desktops) */
+/* Large devices (large desktops >=1200px) */
 $break-large: 1200px;

@@ -10,8 +10,8 @@ function WorkSites(props) {
   const s3Sites = (
     <div className="s3-sites">
       {props.posts.map((post) =>
-        <a className="note-box" href={post.url} target="_blank">
-        	<img src={post.bg} />
+        <a className="one-site s3-{post.id}" href={post.url} target="_blank">
+        	<img className="bg-img" src={post.bg} /> 
         	<img className="logo" src={post.logo} />
         </a>
       )}
@@ -20,14 +20,15 @@ function WorkSites(props) {
   return (
     <div className="container-fluid works">
 		<h2>Works</h2>
-      	<p>Here are some of the websites I developed using Foundation framework, PHP, and SASS.</p>
+      	<p>The following are websites Cathy developed using Foundation framework, HTML, SASS, JavaScript, jQuery, WordPress, and PHP.</p>
       	{s3Sites}
     </div>
   );
 }
 
 const posts = [
-  { bg: require('./../images/s3-clients/s3-1.jpg'), 
+  { id: 1,
+    bg: require('./../images/s3-clients/s3-1.jpg'), 
   	logo: require('./../images/s3-clients/logos/logo-dino.png'), 
   	url: 'https://www.dinomd.com'
   },

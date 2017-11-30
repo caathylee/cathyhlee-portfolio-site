@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 function handleClick(e) {
 		e.preventDefault();
 		alert("This link was clicked.");
 	}
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll >= 100) {
+        $("header").addClass("scrolled");
+    } else {
+		$("header").removeClass("scrolled");
+	}
+});
 class Header extends Component {
 	render() {
 		return (
