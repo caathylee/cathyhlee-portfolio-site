@@ -69,8 +69,8 @@ const posts = [
   	url: 'https://www.waringvision.com/'
   },
   { bg: require('./../images/s3-clients/s3-11.jpg'),
-    logo: require('./../images/s3-clients/logos/logo-hoefflin.png'),
-  	url: 'http://www.hoefflinplasticsurgery.com/'
+    logo: require('./../images/s3-clients/logos/logo-hardin.png'),
+  	url: 'https://www.hardindental.com/'
   },
   { bg: require('./../images/s3-clients/s3-12.jpg'),
     logo: require('./../images/s3-clients/logos/logo-altair.png'),
