@@ -1,10 +1,5 @@
-@font-face {
-	font-family: "andaleMono";
-	src: url("/fonts/AndaleMono.ttf");
-}
-
 h1, h2, p, li, a {
-	font-family: "andaleMono";
+	font-family: $headType;
 }
 
 h1, h2 {

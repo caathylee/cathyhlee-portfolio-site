@@ -29,7 +29,6 @@ class App extends Component {
         </div>
         <ThreeColoredLine />
         <Works />
-        <ThreeColoredLine />
         <Projects />
         <About />
         <ThreeColoredLine />

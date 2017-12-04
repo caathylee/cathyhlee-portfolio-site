@@ -1,3 +1,4 @@
+/* Fonts */
 /* Colors */
 /* Media Queries */
 /* Small devices (phones <768px, tablets >=768px) */
@@ -5,6 +6,13 @@
 /* Large devices (large desktops >=1200px) */
 .container, .container-fluid {
   overflow: hidden; }
+
+h1, h2, h3 {
+  letter-spacing: 2px; }
+
+p, a {
+  letter-spacing: 1px;
+  font-weight: 300; }
 
 header.scrolled .navbar-inverse {
   box-shadow: 0px 0px 13px #000;
@@ -20,7 +28,9 @@ header .navbar-inverse {
   padding-top: 15px;
   padding-bottom: 15px; }
   header .navbar-inverse .navbar-brand {
-    color: #fff; }
+    color: #fff;
+    letter-spacing: 1px;
+    margin-left: 0 !important; }
   header .navbar-inverse .navbar-collapse {
     border: none; }
   @media (max-width: 768px) {
@@ -267,12 +277,8 @@ h2 {
   .contact p {
     margin-bottom: 30px; }
 
-@font-face {
-  font-family: "andaleMono";
-  src: url("/fonts/AndaleMono.ttf"); }
-
 h1, h2, p, li, a {
-  font-family: "andaleMono"; }
+  font-family: "Roboto", sans-serif; }
 
 h1, h2 {
   color: #614c57; }

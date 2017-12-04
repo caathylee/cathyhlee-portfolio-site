@@ -1,3 +1,11 @@
 .container, .container-fluid {
 	overflow: hidden;
 }
+
+h1, h2, h3 {
+	letter-spacing: 2px;
+}
+p, a {
+	letter-spacing: 1px;
+	font-weight: $hLight;
+}
