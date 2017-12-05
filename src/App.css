@@ -44,6 +44,23 @@ header .navbar-toggle {
 
 header .navbar-nav > li > a {
   color: #fff !important; }
+  header .navbar-nav > li > a:hover {
+    position: relative;
+    color: #e0dee3 !important; }
+    header .navbar-nav > li > a:hover:after {
+      content: "";
+      width: 30px;
+      height: 1px;
+      display: block;
+      background: #fff;
+      bottom: 10px;
+      left: 50%;
+      position: absolute;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
 
 @media (min-width: 768px) {
   header .navbar .navbar-nav {
