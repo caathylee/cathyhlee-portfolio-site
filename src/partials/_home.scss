@@ -38,7 +38,7 @@
 		}
 	}
 	.bg-img {
-		@media (min-width: $break-small) {
+		@media (min-width: $break-small) and (max-width: $break-medium) {
 			margin-left: -25%;
 		}
 	}	
