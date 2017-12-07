@@ -153,11 +153,13 @@ footer {
 .slider {
   background: #000 url("images/workspace.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
   width: 100%;
   height: 100vh;
   position: relative; }
-  @media (max-width: 1025px) {
+  @media (min-width: 768px) {
+    .slider {
+      background-attachment: fixed; } }
+  @media (max-width: 992px) {
     .slider {
       height: 500px; } }
   .slider h1, .slider .tagline {

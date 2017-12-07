@@ -9,6 +9,7 @@ $(window).scroll(function() {
 		$("header").removeClass("scrolled");
 	}
 });
+
 class Header extends Component {
 	render() {
 		return (

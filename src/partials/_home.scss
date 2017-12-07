@@ -92,11 +92,13 @@
 .slider {
 	background: #000 url('images/workspace.jpg') no-repeat center center;
 	background-size: cover;
-	background-attachment: fixed;
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	@media (max-width:1025px) {
+	@media (min-width:$break-small) {
+		background-attachment: fixed;
+	}
+	@media (max-width: $break-medium) {
 		height: 500px;
 	}
 	h1, .tagline {

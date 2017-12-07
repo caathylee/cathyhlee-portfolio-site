@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
 
-const s3Directory = './../images/s3-clients/';
-function S3Wrapper (image)
-{
-	return s3Directory + image;
-}
-
 function WorkSites(props) {
   const s3Sites = (
     <div className="s3-sites">
