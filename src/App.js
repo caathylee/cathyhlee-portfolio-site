@@ -36,7 +36,6 @@ class App extends Component {
           <h2>Contact</h2>
           <p>Want to work together? Let's get in touch!</p>
           <ul className="socials">
-            <li><a href="https://bitbucket.org/caathylee/" target="_blank"><img className="icon" src={require('./images/icon-bitbucket.jpg')} /></a></li>
             <li><a href="mailto:cathyhsianglee@gmail.com" target="_blank"><img className="icon" src={require('./images/icon-email.png')} /></a></li>
             <li><a href="https://github.com/caathylee" target="_blank"><img className="icon" src={require('./images/icon-github.jpg')} /></a></li>
             <li><a href="https://www.linkedin.com/in/cathyhsianglee" target="_blank"><img className="icon" src={require('./images/icon-linkedin.png')} /></a></li>
