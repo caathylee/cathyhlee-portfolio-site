@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
     "react": "^16.0.0",
@@ -19,5 +19,8 @@
     "start-js": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "peerDependencies": {
+    "webpack": "^3.11.0"
   }
 }
