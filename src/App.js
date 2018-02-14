@@ -23,7 +23,6 @@ class App extends Component {
             <div className="text">
               <h1>Cathy Lee</h1>
               <p className="tagline">Design-saavy Front-end Developer</p>
-              {/* <img src={require('./images/s3-clients/s3-1.jpg')} />  */}
             </div>
           </div>
         </div>

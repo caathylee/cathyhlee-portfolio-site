@@ -8,7 +8,7 @@ class About extends Component {
             <img src={require('./../images/cathylee.jpg')} />
             <div className="text">
               <h2>About Cathy Lee</h2>
-              <p>Cathy Lee is a user-driven web developer that is passionate about creating seamless user interface and experience with a robust and modular application design. She can work autonomously, but thrives in team environments and believes version control as a necessity for efficiency. She currently resides in Los Angeles, California with her two pups. A few technologies she's proficient with include HTML, SASS, JavaScript, jQuery, React, Foundation, Node, Express, PHP, MongoDB, mySQL, and Git.</p>
+              <p>My interest in coding started with my marketing career. I was put in roles where I had to figure out WordPress and DreamWeaver by myself and create webpages. However, I always wanted to figure out how to do websites from scratch. After leaving my marketing job, I helped a startup design and develop their company website, attended Hack Reactor to further my developer skills, and designed responsive websites at an internet marketing company and website design agency. I'm currently searching for a new role as either a Front End or Full Stack Developer that challenges me and furthers my coding skills. I code in React, JavaScript, Bootstrap, have experience in responsive web design and am a wiz at CSS/SASS.</p>
             </div>
           </div>
         </div>
